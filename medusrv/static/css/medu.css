@@ -1,0 +1,19 @@
+html.md {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  color: #bbbbb6;
+  background: #0b0a10;
+}
+html.md * {
+  transition: 0.3s;
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html.md * :root {
+    font-family: "Inter var", sans-serif;
+  }
+}
+html.md div.text {
+  font-family: droid-sans-mono, monospace;
+}/*# sourceMappingURL=medu.css.map */

@@ -1,0 +1,18 @@
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+            <script>
+                console.log('[MEDUSA] {{ category }}: {{ message }}');
+
+                function closeAlert() {
+                    document.getElementById('alert').style.transform = 'translateX(-1000px)';
+                }
+            </script>
+
+            <div class="md-alert {{ class }} md-{{ category }}" id="alert">
+                <i class="bi bi-x-lg md-close" onclick="closeAlert();"></i>
+                <span>{{ message | safe }}</span>
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
