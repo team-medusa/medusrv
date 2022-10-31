@@ -1,0 +1,111 @@
+@import '_vars'
+
+div.md-action
+    width: fit-content
+    cursor: pointer
+    border-left: 3px solid transparent
+    padding: 1rem
+
+    i
+        opacity: 0.4
+        font-size: xx-large
+
+    &.md-active
+        i
+            opacity: 0.8
+
+        border-left-color: $grey
+
+    &:hover:not(.md-active)
+        i
+            opacity: 0.8
+
+    &.md-bottom
+        position: absolute
+        bottom: 2rem
+        left: 0
+
+div.md-actionbar
+    z-index: 600
+    position: fixed
+    background: $bg
+
+div.md-path
+    position: fixed
+    top: 4rem
+    left: 4.5rem
+    
+    cursor: pointer
+    user-select: none
+
+    div.md-item
+        display: inline
+
+        &:hover
+            color: $fg-pure
+
+div.md-statusbar
+    z-index: 900
+
+    display: flex
+    width: 100%
+    height: auto
+
+    position: fixed
+    bottom: 0
+    left: 0
+
+    user-select: none
+    background: $bg
+
+    div.md-item
+        width: fit-content
+        cursor: pointer
+        padding: 0.5rem
+
+        &:hover
+            background: $bg-grey
+        
+        &.md-connection
+            color: $bg
+            background: $strong
+
+            &:hover
+                filter: saturate(0)
+
+        &.md-right
+            margin-left: auto
+
+div.md-tabs
+    position: absolute
+    top: 1rem
+    left: 4rem
+
+    user-select: none
+
+    div.md-tab
+        display: inline
+        width: fit-content
+        margin-left: 0.5rem
+        padding: 0.5rem
+        padding-block: 1rem
+        padding-right: 0
+
+        cursor: pointer
+        border-bottom: 1px solid transparent
+
+        &.md-active
+            border-bottom-color: $strong
+
+        &:hover, &.md-active
+            .md-close
+                opacity: 1
+
+        .md-close
+            opacity: 0
+            color: $fg-pure
+            padding: 0.5rem
+
+            &:hover
+                border-radius: 10px
+                background: $bg-grey

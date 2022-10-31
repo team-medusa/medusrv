@@ -1,13 +1,14 @@
 @import '_vars'
 
 html.md
-    margin: 0
-    padding: 0
+    &, body
+        margin: 0
+        padding: 0
 
     scroll-behavior: smooth
 
     *
-        transition: 0.3s
+        transition: 0.1s
         font-family: 'Inter', sans-serif
 
         @supports (font-variation-settings: normal)
@@ -16,6 +17,3 @@ html.md
 
     color: $fg
     background: $bg
-
-    div.text
-        font-family: droid-sans-mono, monospace

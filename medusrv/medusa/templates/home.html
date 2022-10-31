@@ -3,7 +3,81 @@
 {% endwith %}
 
 <body>
+    <div class="md-actionbar">
+        <div title="Infos" class="md-action md-active">
+            <i class="bi bi-chat-square-text"></i> 
+        </div>
+        <div title="Files" class="md-action">
+            <i class="bi bi-files"></i>
+        </div>
+        <div title="Search" class="md-action">
+            <i class="bi bi-search"></i>
+        </div>
+        <div title="Extensions" class="md-action">
+            <i class="bi bi-boxes"></i>
+        </div>
+    </div>
+
+    <div title="Settings" class="md-action md-bottom">
+        <i class="bi bi-gear"></i>
+    </div>
+
+    <div class="md-tabs">
+        <div class="md-tab md-active">
+            <i class="bi bi-info-lg md-icon"></i>
+            <span>Welcome to MEDUSA!</span>
+            <i class="bi bi-x-lg md-close"></i>
+        </div>
+        <div class="md-tab">
+            <i class="bi bi-code-slash md-icon"></i>
+            <span>__init__.py</span>
+            <i class="bi bi-x-lg md-close"></i>
+        </div>
+    </div>
+
+    <div class="md-path">
+        <div class="md-item">
+            <span>home</span>
+            <i class="bi bi-chevron-right"></i>
+        </div>
+        <div class="md-item">
+            <span>projects</span>
+            <i class="bi bi-chevron-right"></i>
+        </div>
+        <div class="md-item">
+            <span>medusa</span>
+            <i class="bi bi-chevron-right"></i>
+        </div>
+        <div class="md-item">
+            <span>docs</span>
+            <i class="bi bi-chevron-right"></i>
+        </div>
+        <div class="md-item">
+            <span>README.md</span>
+        </div>
+    </div>
+
+    <div class="md-editor">
+        <div id="aero" contenteditable="true">
+            <!-- <span style="color: blue"># Hello</span>  -->
+            there!
+        </div>
+    </div>
+
+    <div class="md-statusbar">
+        <div class="md-connection md-item">
+            <!-- <i class="bi bi-cloud-minus"></i> -->
+            <!-- <i class="bi bi-cloud"></i> -->
+            <i class="bi bi-cloud-check"></i>
+            <span>Connected</span>
+        </div>
+        <div class="md-right md-item">
+            <span>Ln 0, Col 0</span>
+        </div>
+    </div>
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/static/js/aero.js"></script>
 
 {% include "components/end.html" %}

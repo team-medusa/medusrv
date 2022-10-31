@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+div.md-action {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+  padding: 1rem;
+}
+div.md-action i {
+  opacity: 0.4;
+  font-size: xx-large;
+}
+div.md-action.md-active {
+  border-left-color: #8b8a8d;
+}
+div.md-action.md-active i {
+  opacity: 0.8;
+}
+div.md-action:hover:not(.md-active) i {
+  opacity: 0.8;
+}
+div.md-action.md-bottom {
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+}
+
+div.md-actionbar {
+  z-index: 600;
+  position: fixed;
+  background: #0b0a10;
+}
+
+div.md-path {
+  position: fixed;
+  top: 4rem;
+  left: 4.5rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+div.md-path div.md-item {
+  display: inline;
+}
+div.md-path div.md-item:hover {
+  color: #ffffff;
+}
+
+div.md-statusbar {
+  z-index: 900;
+  display: flex;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: #0b0a10;
+}
+div.md-statusbar div.md-item {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+div.md-statusbar div.md-item:hover {
+  background: rgba(139, 138, 141, 0.2392156863);
+}
+div.md-statusbar div.md-item.md-connection {
+  color: #0b0a10;
+  background: #da4a72;
+}
+div.md-statusbar div.md-item.md-connection:hover {
+  filter: saturate(0);
+}
+div.md-statusbar div.md-item.md-right {
+  margin-left: auto;
+}
+
+div.md-tabs {
+  position: absolute;
+  top: 1rem;
+  left: 4rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+div.md-tabs div.md-tab {
+  display: inline;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  padding-block: 1rem;
+  padding-right: 0;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+}
+div.md-tabs div.md-tab.md-active {
+  border-bottom-color: #da4a72;
+}
+div.md-tabs div.md-tab:hover .md-close, div.md-tabs div.md-tab.md-active .md-close {
+  opacity: 1;
+}
+div.md-tabs div.md-tab .md-close {
+  opacity: 0;
+  color: #ffffff;
+  padding: 0.5rem;
+}
+div.md-tabs div.md-tab .md-close:hover {
+  border-radius: 10px;
+  background: rgba(139, 138, 141, 0.2392156863);
+}/*# sourceMappingURL=medit.css.map */

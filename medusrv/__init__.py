@@ -21,14 +21,6 @@ def create_app():
 
     app.register_blueprint(medusa_bp)
 
-    import flaskcode
-
-    app.config.from_object(flaskcode.default_config)
-
-    app.config['FLASKCODE_RESOURCE_BASEPATH'] = '/home/python/web/medusrv/container'
-
-    app.register_blueprint(flaskcode.blueprint, url_prefix='/editor')
-
     @app.context_processor
     def injector():
         return dict(home_url='https://onlix.me')

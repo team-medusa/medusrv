@@ -8,9 +8,13 @@
         "**/Thumbs.db": true,
         "**/__pycache__": true,
         "**/*.css.map": true,
-        "medusrv/static/css/medu.css": true
+        "medusrv/static/css/medu.css": true,
+        "medusrv/static/css/medit.css": true,
+        "medusrv/static/css/aero.css": true
     },
     "hide-files.files": [
-        "medusrv/static/css/medu.css"
+        "medusrv/static/css/medu.css",
+        "medusrv/static/css/medit.css",
+        "medusrv/static/css/aero.css"
     ]
 }

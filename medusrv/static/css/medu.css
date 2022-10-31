@@ -1,19 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 html.md {
-  margin: 0;
-  padding: 0;
   scroll-behavior: smooth;
   color: #bbbbb6;
   background: #0b0a10;
 }
+html.md, html.md body {
+  margin: 0;
+  padding: 0;
+}
 html.md * {
-  transition: 0.3s;
+  transition: 0.1s;
   font-family: "Inter", sans-serif;
 }
 @supports (font-variation-settings: normal) {
   html.md * :root {
     font-family: "Inter var", sans-serif;
   }
-}
-html.md div.text {
-  font-family: droid-sans-mono, monospace;
 }/*# sourceMappingURL=medu.css.map */

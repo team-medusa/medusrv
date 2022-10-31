@@ -1,4 +1,4 @@
-![medusa](https://user-images.githubusercontent.com/67185896/197883191-958f4574-45af-4b18-9adc-033daf7381bd.png)
+![medusa](docs/assets/medusa-cover.png)
 
 ### Coming soon...
 
