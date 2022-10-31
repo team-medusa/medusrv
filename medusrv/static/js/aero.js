@@ -45,10 +45,12 @@ function insertTextAtCursor(text) {
 }
 
 $('#aero').focus();
-$('#aero').keypress(function(e) {
+
+document.getElementById("aero").onkeypress = function(e) {
     if (e.key in completions) {
         e.preventDefault();
         insertTextAtCursor(e.key + completions[e.key]);
-        moveCaret(window, 4);
+        document.getElementById("aero").focus();
+        // moveCaret(window, -1);
     }
-});
+};
